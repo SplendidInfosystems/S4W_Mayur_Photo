@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <link rel="icon" type="image/x-icon" href="./Assets/Images/Logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Mayur Studio</title>
+</head>
+
+<body>
+
+    <section class="land-page" id="home">
+        <!-- ====== Navigation ======= -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid logo-div  p-2">
+                <img class="logo ms-4 me-4" src="./Assets/Images/Logo.png" alt="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active ms-4 me-4" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active ms-4 me-4" aria-current="page" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active ms-4 me-4" aria-current="page" href="#weDo">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active ms-4 me-4" aria-current="page" href="#">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active ms-4 me-4" aria-current="page" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active ms-4 me-4" aria-current="page" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <select id="dropdown">
+                                <option value="English">English</option>
+                                <option value="Hindi">हिंदी</option>
+                              </select>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+    </section>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row" >
+                <div class="sol-sm-12 col-md-6 col-lg-6 about-card">
+                    <h1>Mayur Photo Studio, Bodwad (JALGAON)</h1>
+                    <p>If you are in search of exceptional photographic expertise in <strong>Bodwad</strong>, you have discovered the ultimate destination! Mayur Photography stands as your comprehensive solution for all refined photography needs. Our extensive services include Wedding Photography, Cinematography, Couple Sessions, meticulous Album Designing, and precision Printing. At Mayur Photography, we transform moments into timeless visual narratives, ensuring an unparalleled fusion of artistry and professionalism. Entrust us to capture and craft your memories with the utmost precision and creativity in the picturesque locale of Bodwad.</p>
+                </div>
+                <div class="sol-sm-12 col-md-6 col-lg-6 get-a-quate" data-aos="zoom-in-up">
+                        <h2>Book Mayur Photography</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="we-do container-fluid" id="weDo">
+        <h1>What We Do?</h2>
+            <div class="container we-do-container">
+                <div class="item " data-aos="flip-right">
+                    <img src="./Assets/Images/Logo.png" alt="">
+                    <h6>Wedding Photography</h6>
+                </div>
+                <div class="item " data-aos="flip-right">
+                    <img src="./Assets/Images/Logo.png" alt="">
+                    <h6>Engagement Photoshoot</h6>
+                </div>
+                <div class="item " data-aos="flip-right">
+                    <img src="./Assets/Images/Logo.png" alt="">
+                    <h6>Pre Wedding Photoshoot</h6>
+                </div>
+                <div class="item " data-aos="flip-right">
+                    <img src="./Assets/Images/Logo.png" alt="">
+                    <h6>Maternity Photoshot</h6>
+                </div>
+                <div class="item " data-aos="flip-right">
+                    <img src="./Assets/Images/Logo.png" alt="">
+                    <h6>Birthday Photoshoot</h6>
+                </div>
+                <div class="item " data-aos="flip-right">
+                    <img src="./Assets/Images/Logo.png" alt="">
+                    <h6>Baby Shower Photoshoot</h6>
+                </div>
+            </div>
+    </section>
+    <!-- ===== Bootstrap CDN ======= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./Assets/JS/script.js"></script>
+    <script src="./Assets/JS/loadData.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
