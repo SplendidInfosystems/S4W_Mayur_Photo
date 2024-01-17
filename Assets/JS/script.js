@@ -64,3 +64,20 @@ window.addEventListener('scroll', function() {
       }
     });
   }
+
+   const images = ["./Assets/Images/702A0779.JPG", "./Assets/Images/virendra jpg_Cover.jpg", "./Assets/Images/member1.jpg"];
+   let currentImageIndex = 0;
+ 
+   function changeImage() {
+     const imageContainer = document.getElementById("imageContainer");
+     const image = imageContainer.querySelector("img");
+     image.style.opacity = 0;
+     setTimeout(() => {
+       currentImageIndex = (currentImageIndex + 1) % images.length;
+       image.src = images[currentImageIndex];
+       setTimeout(() => {
+         image.style.opacity = 1;
+       }, 100);
+     }, 1000);
+   }
+   setInterval(changeImage, 4000);

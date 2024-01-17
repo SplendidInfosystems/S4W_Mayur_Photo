@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./Assets/CSS/style.css">
     <link rel="icon" type="image/x-icon" href="./Assets/Images/Logo.png">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -50,34 +50,40 @@
                         </li>
                         <li class="nav-item">
                             <select id="dropdown">
-                                <option value="English">English</option>
-                                <option value="Hindi">हिंदी</option>
-                              </select>
+                                <option class="options" value="English">English</option>
+                                <option  class="options" value="Hindi">हिंदी</option>
+                            </select>
                         </li>
 
                     </ul>
                 </div>
             </div>
         </nav>
-        
+
     </section>
     <section class="about" id="about">
         <div class="container">
-            <div class="row" >
+            <div class="row">
                 <div class="sol-sm-12 col-md-6 col-lg-6 about-card">
                     <h1>Mayur Photo Studio, Bodwad (JALGAON)</h1>
-                    <p>If you are in search of exceptional photographic expertise in <strong>Bodwad</strong>, you have discovered the ultimate destination! Mayur Photography stands as your comprehensive solution for all refined photography needs. Our extensive services include Wedding Photography, Cinematography, Couple Sessions, meticulous Album Designing, and precision Printing. At Mayur Photography, we transform moments into timeless visual narratives, ensuring an unparalleled fusion of artistry and professionalism. Entrust us to capture and craft your memories with the utmost precision and creativity in the picturesque locale of Bodwad.</p>
+                    <p>If you are in search of exceptional photographic expertise in <strong>Bodwad</strong>, you have
+                        discovered the ultimate destination! Mayur Photography stands as your comprehensive solution for
+                        all refined photography needs. Our extensive services include Wedding Photography,
+                        Cinematography, Couple Sessions, meticulous Album Designing, and precision Printing. At Mayur
+                        Photography, we transform moments into timeless visual narratives, ensuring an unparalleled
+                        fusion of artistry and professionalism. Entrust us to capture and craft your memories with the
+                        utmost precision and creativity in the picturesque locale of Bodwad.</p>
                 </div>
                 <div class="sol-sm-12 col-md-6 col-lg-6 get-a-quate" data-aos="zoom-in-up">
-                        <h2>BOOK MAYUR PHOTOGRAPHY</h2>
-                        <div class="container ">
-                            <form action="POST" class="input-box">
-                                <input type="text" placeholder="Name">
-                                <input type="text" placeholder="Mobile">
-                                <input type="text" placeholder="City">
-                                <button type="submit">GET A QUOTE</button>
-                            </form>
-                        </div>
+                    <h2>BOOK MAYUR PHOTOGRAPHY</h2>
+                    <div class="container ">
+                        <form action="POST" class="input-box">
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Mobile">
+                            <input type="text" placeholder="City">
+                            <button type="submit">GET A QUOTE</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -113,25 +119,99 @@
     </section>
     <section class="you-tube">
         <div class="container">
-            <h1 class="container-title">Videos</h1>
+            <h1 class="container-title">Our Videos</h1>
             <div class="row">
-                <div data-aos="zoom-in-up" class="video-left col-12 col-sm-12 col-md-8 col-lg-8 embed-responsive embed-responsive-21by9"  id="video-container">
-                    <img src="./Assets/Images/virendra jpg_Cover.jpg"  alt="Video Thumbnail" onclick="playVideo()">
+                <div data-aos="zoom-in-up"
+                    class="video-left col-12 col-sm-12 col-md-8 col-lg-8 embed-responsive embed-responsive-21by9"
+                    id="video-container">
+                    <img src="./Assets/Images/virendra jpg_Cover.jpg" alt="Video Thumbnail" onclick="playVideo()">
                 </div>
                 <div class="video-right col-12 col-sm-12 col-md-4 col-lg-4">
-                   <div class="row">
-                    <div class="video-one col-12">
-                        <!-- <img src="./Assets/Images/702A0779.JPG"  alt="Video Thumbnail" onclick="playVideo()"> -->
+                    <div class="row">
+                        <div class="video-one col-12">
+                            <!-- <img src="./Assets/Images/702A0779.JPG"  alt="Video Thumbnail" onclick="playVideo()"> -->
+                        </div>
+                        <div class="video-two col-12">
+                            <!-- <img src="./Assets/Images/virendra jpg_Cover.jpg"  alt="Video Thumbnail" onclick="playVideo()"> -->
+                        </div>
                     </div>
-                    <div class="video-two col-12">
-                        <!-- <img src="./Assets/Images/virendra jpg_Cover.jpg"  alt="Video Thumbnail" onclick="playVideo()"> -->
-                    </div>
-                   </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <section class="our-works">
+        <h1 class="container-title">Our Works</h2>
+            <div class="container ">
+                <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="">
+                            <div class="">
+                                <div class="container-fluid">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                    <img src="./Assets/Images/702A0779.JPG" class="works-cards" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                <img src="./Assets/Images/702A0779.JPG" data-aos="zoom-in-right" class="works-img"
+                                    data-bs-target="#exampleModalToggle" data-bs-toggle="modal" alt="">
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img src="./Assets/Images/virendra jpg_Cover.jpg" data-aos="zoom-in-left"
+                                            class="works-img" data-bs-target="#exampleModalToggle"
+                                            data-bs-toggle="modal" alt="">
+                                    </div>
+                                    <div class="col-12">
+                                        <img src="./Assets/Images/virendra jpg_Cover.jpg" data-aos="zoom-in-left"
+                                            class="works-img" data-bs-target="#exampleModalToggle"
+                                            data-bs-toggle="modal" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img src="./Assets/Images/virendra jpg_Cover.jpg" data-aos="zoom-in-left"
+                                            class="works-img" data-bs-target="#exampleModalToggle"
+                                            data-bs-toggle="modal" alt="">
+                                    </div>
+                                    <div class="col-12">
+                                        <img src="./Assets/Images/virendra jpg_Cover.jpg" data-aos="zoom-in-left"
+                                            class="works-img" data-bs-target="#exampleModalToggle"
+                                            data-bs-toggle="modal" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                <img src="./Assets/Images/img1.jpg" class="works-img" data-aos="zoom-in-right"
+                                    data-bs-target="#exampleModalToggle" data-bs-toggle="modal" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="our-team">
+        <div class="container">
+            <h1 class="container-title">OUR TEAM</h1>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    <div  id="imageContainer">
+                        <img src="./Assets/Images/member1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="footer-top">
             <div class="social-icon">
@@ -160,9 +240,9 @@
     <script src="./Assets/JS/loadData.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
-  <script>
-    AOS.init();
-  </script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -9,6 +9,7 @@
 .container-title{
     color: purple;
     text-align: center;
+    text-transform: uppercase;
 }
 /* ======== Land-Page ======== */
 .land-page {
@@ -64,6 +65,18 @@
     top: 0px;
     width: 100%;
 }
+#dropdown{
+    border: none;
+    background-color: transparent;
+    padding: 10px 0px;
+    color: purple;
+    font-weight: 600;
+}
+.options{
+    background-color: transparent;
+    border-radius: 0px;
+    padding: 10px 0px;
+}
 
 /* ======== About ======== */
 .about {
@@ -101,6 +114,7 @@
     padding: 8px 10px;
     border-radius: 4px;
     margin: 20px auto;
+    border: 1px solid gray;
 }
 .get-a-quate button{
     width: 100%;
@@ -176,6 +190,44 @@
     width: 100%;
   }
 
+  /* ============== Our Works =========== */
+    .our-works{
+        min-height: 100vh;
+        width: 100%;
+        background-color: rgba(217, 203, 217, 0.507);
+        padding: 30px 0px;
+    }
+    .works-cards img{
+        width: 100%;
+    }
+    
+    .modal-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+      }
+      .works-img{
+        width: 100%;
+        margin-top: 10px;
+      }
+      .works-cards {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+/* =========Our Team ========= */
+.our-team{
+    min-height: 30vh;
+    padding: 20px 0px;
+}
+.our-team h1{
+    padding-top: 20px;
+}
+.our-team img{
+    width: 100%;
+}
+/* ========== Footer =========== */
   footer{
     min-height: 15vh;
     width: 100%;
@@ -270,10 +322,10 @@
         text-align: center;
     }
     .land-page {
-        background-image: url('../Images/702A0779.JPG');
+        background-image: url('../Images/bg-mobile-hero.jpg');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 100 100;
+        background-size: cover;
     }
     .about{
         padding: 30px 0px 0px 0px;
@@ -304,6 +356,9 @@
     }
     .we-do-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .works-img{
+        margin-top: 20px;
     }
     .footer-links ul{
         flex-direction: column;
