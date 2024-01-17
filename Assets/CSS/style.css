@@ -1,12 +1,15 @@
 /* ======== Global ======== */
-* {
+*{
     margin: 0px;
-    padding: 0px;
+    padding:0px;
     box-sizing: border-box;
     max-width: 1920px;
-    margin: auto;
+    margin:auto;
 }
-
+.container-title{
+    color: purple;
+    text-align: center;
+}
 /* ======== Land-Page ======== */
 .land-page {
     height: 100vh;
@@ -32,24 +35,20 @@
 .navbar-nav .nav-item {
     transition: all 0.3s;
 }
-
-.nav-item a {
+.nav-item a{
     color: purple !important;
     font-weight: 600 !important;
 }
-
-.logo-div {
+.logo-div{
     display: flex;
     justify-content: center;
     align-self: center;
-
+    
 }
-
-.logo {
+.logo{
     height: 5vh;
     float: right;
 }
-
 .navbar-nav .nav-item:hover {
     color: purple;
     border-bottom: 2px solid #fff;
@@ -72,60 +71,78 @@
     width: 100%;
     padding: 60px 0px 60px 0px;
 }
-
-.about h1 {
+.about h1{
     color: purple;
 }
-
-.about-card {
+.about-card{
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
-.get-a-quate {
+.get-a-quate{
     height: 60vh;
     margin: auto;
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    
 }
-
-.get-a-quate h2 {
+.input-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    /* width: 100%; */
+}
+.get-a-quate input{
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 4px;
+    margin: 20px auto;
+}
+.get-a-quate button{
+    width: 100%;
+    margin: auto;
+    border: none;
+    border-bottom: 3px solid purple;
+    color: purple;
+    font-weight: 600;
+    padding: 10px 0px;
+    cursor: pointer;transition: all 0.3s;
+}
+.get-a-quate button:hover{
+    background-color: purple;
+    color: #fff;
+}
+.get-a-quate h2{
     text-align: center;
     padding-top: 12px;
 }
-
 /* ========We Do Section ======== */
-.we-do {
-    height: 60vh;
+.we-do{
+    min-height: 45vh;
     margin: auto;
     background-color: #f9f9f9;
+    padding-bottom: 20px;
 }
-
-.we-do h1 {
-    text-align: center;
-    color: purple;
+.we-do h1{
     padding: 40px 0px;
 }
-
-.we-do-cards {
+.we-do-cards{
     text-align: center;
     height: 3rem;
     background-color: orange;
 }
-
 .we-do-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 1rem;
-}
+    gap: 1rem; 
+  }
 
 .item {
-    /* background-color: #8814d06d; */
     padding: 20px 10px;
-    padding: 1rem;
     text-align: center;
     margin-bottom: 1rem;
     height: 7rem;
@@ -133,117 +150,113 @@
     border-radius: 4px;
     border: 1px solid purple;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-
-.item img {
+  }
+  .item img{
     width: 30%;
     position: relative;
-    top: -35px;
+    top: -40px;
     margin: auto;
-}
+  }
 
-/* ======== Footer ======== */
-
-footer {
-    background-color: #111;
-    max-width: 100%;
-}
-
-.footerContainer {
-
+/* ========We Do Section ======== */
+  .you-tube{
+    min-height: 80vh;
     width: 100%;
-    padding: 30px 30px 0px 30px;
-}
+    background-color: aliceblue;
+    padding-bottom: 40px;
+  }
+  .you-tube h1{
+    padding: 20px 0px;
+    text-align: center;
+  }
+  .video-left iframe{
+    width: 100%;
+  }
+  .video-right  iframe{
+    width: 100%;
+  }
 
-.footerIcon {
+  footer{
+    min-height: 15vh;
+    width: 100%;
+    background-color: #111111;
+  }
+  .footer-top{
+    min-height: 20vh;
+    width: 100%;
+
+  }
+  .social-icon{
+    width: 20%;
+    margin: auto;
+    height: 20vh;
     display: flex;
     justify-content: center;
+    align-items:center;
+  }
+ .social-icon a{
+    text-decoration: none;
+ }
+ .social-icon i:hover{
+    background-image: linear-gradient( 45deg, hsl(224deg 95% 39%) 0%, hsl(264deg 62% 44%) 17%, hsl(288deg 74% 38%) 33%, hsl(306deg 100% 33%) 50%, hsl(317deg 100% 37%) 67%, hsl(325deg 100% 40%) 83%, hsl(333deg 91% 44%) 100%);
+    border:2px solid  purple;
 }
 
-.footerIcon a {
-    text-decoration: none;
-    height: 50px;
-    width: 50px;
-    background-color: white;
+  .social-icon i{
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.footerIcon a i {
-    font-size: 2em;
-    color: black;
-    /* opacity: 0.5; */
-}
-
-.footerIcon a:hover {
-    background-color: #111;
-    transition: 0.3s;
-
-}
-
-.footerIcon a:hover i {
-    color: white;
-    transition: 0.5s;
-}
-
-.footerMenu {
+    transition: all 0.3s;
+  }
+  .footer-links{
+    width: 60%;
     margin: auto;
-    width: 50%;
-}
-
-.footerMenu ul {
     display: flex;
-    justify-content: center;
-    list-style-type: none;
-    color: white;
-}
-
-.footerMenu ul li a {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .footer-links ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .footer-links ul li{
+    display: inline;
+  }
+  .footer-links a{
     text-decoration: none;
-    color: white;
-    margin: 20px;
-    font-size: 1.3em;
-    opacity: 0.7;
-    transition: 0.5s;
-}
-
-.footerMenu ul li a:hover {
-    opacity: 1;
-}
-
-.footerCopyright {
+    color: #fff;
+  }
+  .footer-links li{
+    padding: 5px 0px;
+  }
+  .copyright{
+    height: 7vh;
+    width: 100%;
     background-color: #000;
-    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.footerCopyright p {
-   padding: 0px;
-}
-
-.footerCopyright {
-    color: white;
-}
-
-.footer .name {
-    text-transform: uppercase;
-    font-weight: 400;
-    margin: 0 5px;
-    letter-spacing: 1px;
-    opacity: 0.6;
-}
-
-
-
+    color: #fff;
+    font-size: 0.8rem;
+  }
 /* ======== MediaScreen 1024-px ======== */
 @media (max-width: 1024px) {
     .we-do-container {
         grid-template-columns: repeat(4, 1fr);
     }
-}
+    .social-icon{
+        width: 40%;
+    }
+  }
 
 /* ======== MediaScreen 992-px ======== */
 @media (max-width: 768px) {
@@ -256,71 +269,49 @@ footer {
     .navbar-nav {
         text-align: center;
     }
-
     .land-page {
         background-image: url('../Images/702A0779.JPG');
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100 100;
     }
-
-    .about {
+    .about{
         padding: 30px 0px 0px 0px;
     }
-
-    .about-card {
+    .about-card{
         text-align: center;
     }
-
-    .get-a-quate {
-        height: 60vh;
-        width: 95%;
+    .get-a-quate{
+        height: auto;
+        width: 90%;
         margin: auto;
         border-radius: 10px;
-        background-color: rgb(232, 140, 11);
         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
         margin-bottom: 20px;
+        padding: 30px 0px;
     }
-
-    .we-do {
+    .we-do{
         margin: auto;
         margin-bottom: 20px;
     }
-
-    .we-do-cards {
+    .we-do-cards{
         width: 50%;
         text-align: center;
         margin: 0px;
     }
-
+    .item img{
+        top: -35px;
+    }
     .we-do-container {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    /* ======== Footer ======== */
-
-    footer {
-        width: 100%;
-    }
-
-    .footerIcon {
-        justify-content: space-around;
-    }
-
-    .footerIcon a {
-        margin: 15px 8px;
-    }
-    .footerMenu{
-        width: 90%;
-        margin: auto;
-    }
-
-    .footerMenu ul {
+    .footer-links ul{
         flex-direction: column;
+        height: auto;
+        padding: 20px 0px;
     }
-
-    .footerMenu ul li {
-        text-align: center;
-        margin: 8px;
+    .social-icon{
+        width: 60%;
+        height: 10vh;
     }
 }

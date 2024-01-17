@@ -8,3 +8,59 @@ window.addEventListener('scroll', function() {
       navbar.classList.remove('scrolled');
     }
   });
+
+  // YouTube Video ID
+  var videoId = '9hKJ9QZP4h8';
+
+  // YouTube Player Object
+  var player;
+
+  // Function to create YouTube Player
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('video-container', {
+      height: '515',
+      width: '560',
+      videoId: videoId,
+      playerVars: {
+        'autoplay': 0,
+        'controls': 0,
+        'showinfo': 0,
+        'rel': 0,
+        'showinfo': 0,
+        'modestbranding': 0,
+        'rel':0
+      },
+      events: {
+        'onReady': onPlayerReady
+      }
+    });
+  }
+
+  // Function to handle player ready event
+  function onPlayerReady(event) {
+    // Hide the player initially
+    event.target.pauseVideo();
+  }
+
+  // Function to play the video on thumbnail click
+  function playVideo() {
+    // Swap the thumbnail with the YouTube player
+    document.getElementById('video-container').innerHTML = '<div id="player"></div>';
+    
+    // Create the YouTube player
+    player = new YT.Player('player', {
+      height: '315',
+      width: '560',
+      videoId: videoId,
+      playerVars: {
+        'autoplay': 1,
+        'controls': 0,
+        'showinfo': 0,
+        'rel': 0,
+        'modestbranding': 0
+      },
+      events: {
+        'onReady': onPlayerReady
+      }
+    });
+  }
